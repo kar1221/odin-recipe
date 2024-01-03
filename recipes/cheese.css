@@ -28,15 +28,22 @@ main .title-container {
     font-family: 'Montserrat', sans-serif;
     border-radius: 3rem;
     margin-bottom: 3rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
 }
 
-.ingredient, .instruction {
+.ingredient, .instruction, .images {
     background-color: white;
     font-size: 1.2rem;
     padding: 3rem 5rem;
     border-radius: 3rem;
     max-width: 30vw;
-    margin: 3rem;
+    margin: 3rem 3rem 0 3rem;
+}
+
+.ingredient:last-child,
+.instruction:last-child,
+.images:last-child {
+    margin-bottom: 3rem;
 }
 
 .main-panel .title {
@@ -44,17 +51,30 @@ main .title-container {
     font-size: 1.5rem;
 }
 
-.main-panel .primary {
+.main-panel .title.primary {
     font-size: 2rem;
     text-decoration: underline;
     margin-bottom: 1em;
 }
 
 .main-panel li {
-    margin: 1rem;
+    margin: 2rem 1rem;
     list-style: circle;
 }
 
 .main-panel .remark {
     color: #858585;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.images img {
+    border-radius: 3rem;
+}
+
+.images img:nth-of-type(1) {
+    margin-bottom: 3rem;
 }
