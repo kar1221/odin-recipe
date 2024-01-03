@@ -78,3 +78,18 @@ main .title-container {
 .images img:nth-of-type(1) {
     margin-bottom: 3rem;
 }
+
+#back-button {
+    background-color: #B19470;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: black;
+    transition: transform 0.05s ease;
+}
+
+#back-button:hover {
+    transform: translateY(-0.5rem);
+}
